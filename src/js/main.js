@@ -4,7 +4,7 @@ let dbPromise;
 	check if the navigator supports service worker then register serviceWorker
 */
 if(navigator.serviceWorker) {
-	navigator.serviceWorker.register('/sw.js').then(reg => {
+	navigator.serviceWorker.register('/ALC-currency-converter/sw.js').then(reg => {
 		if (navigator.serviceWorker.controller) {
 			if (reg.waiting) {
 	    		//show refresh modal
