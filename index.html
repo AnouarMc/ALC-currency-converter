@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Currency Converter</title>
+	<link rel="stylesheet" href="./src/css/main.css">
+	<link rel="icon" href="./favicon.ico">
+</head>
+<body>
+	<div class="container">
+		<div class="fromCurrency">
+			<p id="date">Jun 26, 2018</p>
+			<p class="from">From</p>
+			<input type="text" class="currencyInput" id="srcInput">
+			<ul name="" id="srcCurrency" class="currencyList">
+			</ul>
+		</div>
+		<button id="convert">
+		<span>	 
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" id="uccGoBtnImg" enable-background="new 0 0 60 60">
+				<path class="st0-cnvrtr" d="M.4 35.1h40.4l-13.8 13.7 7.3 7.1 25.3-26.2-25.3-26.1-7.1 7.1 13.5 13.8h-40.3v10.6z" id="Icon_1_"></path>
+			</svg>
+			</span>
+		</button>
+		<div class="toCurrency">
+			<p class="from">To</p>
+			<input type="text" class="currencyInput" id="destInput">
+			<ul name="" id="destCurrency" class="currencyList">
+			</ul>
+		</div>
+	</div>
+	<div id="message">
+			<p>This app needs to be updated. To update, select the Refresh button.</p>
+			<button id="refresh">Refresh</button>
+			<button id="dismiss">Dismiss</button>
+		</div>
+	<script src="./src/js/idb.js"></script>
+	<script src="./src/js/main.js"></script>
+</body>
+</html>
