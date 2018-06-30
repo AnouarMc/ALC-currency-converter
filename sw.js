@@ -4,12 +4,12 @@ self.addEventListener('install', event => {
 	event.waitUntil(
 		caches.open(staticCacheName).then(cache => {
 			return cache.addAll([
-				'/',
-				'/index.html',
-				'/favicon.ico',
-				'/src/css/main.css',
-				'/src/js/main.js',
-				'/src/js/idb.js',
+				'/ALC-currency-converter',
+				'/ALC-currency-converter/index.html',
+				'/ALC-currency-converter/favicon.ico',
+				'/ALC-currency-converter/src/css/main.css',
+				'/ALC-currency-converter/src/js/main.js',
+				'/ALC-currency-converter/src/js/idb.js',
 				'https://free.currencyconverterapi.com/api/v5/currencies'
 			])
 		})
