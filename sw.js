@@ -4,7 +4,7 @@ self.addEventListener('install', event => {
 	event.waitUntil(
 		caches.open(staticCacheName).then(cache => {
 			return cache.addAll([
-				'/ALC-currency-converter',
+				'/ALC-currency-converter/',
 				'/ALC-currency-converter/index.html',
 				'/ALC-currency-converter/favicon.ico',
 				'/ALC-currency-converter/src/css/main.css',
